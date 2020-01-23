@@ -6,7 +6,7 @@
     },
     "schema-version": "cytomine-0.1",
     "description": "trace 3d neuron with vaa3d BJUT Fast Marching Spanning Tree algorithm",
-    "command-line": "python wrapper.py CYTOMINE_HOST CYTOMINE_PUBLIC_KEY CYTOMINE_PRIVATE_KEY CYTOMINE_ID_PROJECT CYTOMINE_ID_SOFTWARE THRESHOLD SEED SLIP",
+    "command-line": "python wrapper.py CYTOMINE_HOST CYTOMINE_PUBLIC_KEY CYTOMINE_PRIVATE_KEY CYTOMINE_ID_PROJECT CYTOMINE_ID_SOFTWARE",
     "inputs": [
         {
             "id": "cytomine_host",

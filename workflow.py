@@ -11,8 +11,7 @@ from swc_to_tiff_stack import swc_to_tiff_stack
 import tifffile as tiff
 
 
-def workflow(in_images, out_path,
-             seed):
+def workflow(in_images, out_path):
     print("Starting workflow!")
     
     for neubias_input_image in in_images:
