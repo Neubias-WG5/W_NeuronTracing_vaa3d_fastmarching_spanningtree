@@ -15,7 +15,7 @@ RUN git clone https://github.com/cytomine-uliege/Cytomine-python-client.git && \
 # It will get DiademMetric.jar and JSAP-2.1.jar files to compute DIADEM metric
 RUN apt-get update && apt-get install libgeos-dev -y && apt-get clean
 RUN git clone https://github.com/Neubias-WG5/neubiaswg5-utilities.git && \
-    cd /neubiaswg5-utilities/ && git checkout tags/v0.8.10 && pip install .
+    cd /neubiaswg5-utilities/ && git checkout tags/v0.8.8 && pip install .
 
 # install utilities binaries
 RUN chmod +x /neubiaswg5-utilities/bin/*
