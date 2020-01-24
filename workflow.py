@@ -30,11 +30,10 @@ def workflow(in_images, out_path):
         print("Finished running: 180 degrees image rotation in xy axis")
         
         #Compute the neuron tracing
-        #command = "/usr/bin/xvfb-run Vaa3D_CentOS_64bit_v3.458/vaa3d -x libvn2 -f app1 -i " + \
-        #    out_file_path + " -o " + out_file_path[:-4]+ ".swc"
+        #/usr/bin/xvfb-run /Vaa3D_CentOS_64bit_v3.458/vaa3d -x /Vaa3D_CentOS_64bit_v3.458/plugins/neuron_tracing/BJUT_fastmarching_spanningtree/libfastmarching_spanningtree.so -f tracing_func -i /root/34504973/out/24947921.tif -p 1
 
-        command = "/usr/bin/xvfb-run Vaa3D_CentOS_64bit_v3.458/vaa3d -x /Vaa3D_CentOS_64bit_v3.458/plugins/neuron_tracing/BJUT_fastmarching_spanningtree/libfastmarching_spanningtree.so -f trace_mst -i {} -o {}.swc " \
-                  "-p 1".format(out_file_path, out_file_path[:-4])
+        command = "/usr/bin/xvfb-run /Vaa3D_CentOS_64bit_v3.458/vaa3d -x /Vaa3D_CentOS_64bit_v3.458/plugins/neuron_tracing/BJUT_fastmarching_spanningtree/libfastmarching_spanningtree.so -f tracing_func -i {} " \
+                  "-p 1".format(out_file_path)
         print(command)
 
         return_code = call(command, shell=True, cwd="/") # waits for the subprocess to return
